@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="firststyle.css" />
+
+  <link rel="shortcut icon"  href="images/cupcake1.png"/>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous">
+
+  </script>
+  <title>CakeShop</title>
+  <script type="text/javascript">
+    var i = 1;
+    var x = setInterval(function() {
+      var x = document.getElementById("a");
+      var y = document.getElementById("b");
+      console.log(x.style.color);
+      if (x.style.color == "white"&&y.style.color == "white"){
+        x.style.color = "deeppink";
+        y.style.color = "deeppink";
+      }
+      else if (x.style.color == "deeppink"&&y.style.color == "deeppink"){
+        x.style.color = "white";
+        y.style.color = "white";
+      }
+
+
+
+    }, 1000);
+
+  </script>
+
+
+
+</head>
+<body>
+
+
+
+<header>
+
+  <h1  class="cake" ></h1>
+
+  <nav class="navi">
+
+    <a href="#">Home</a>
+    <a href="#ab">About us</a>
+    <a href="#f">Contact us</a>
+    <button onclick = "window.location.href='myphp.php';"  class="butt">LogIn</button>
+    <h1  class="cake" ></h1>
+    <h1  class="cake" ></h1>
+    <div>
+      <h1  class="cake" id="a" style="color: white; text-align: center" >CakeShop</h1>
+    </div>
+    <div>
+      <h1 id="b" class="cake2"  style="color: white; text-align: center" >Try our tasty cakes</h1>
+    </div>
+    <div >
+
+    </div>
+  </nav>
+
+
+
+
+
+</header>
+
+
+
+<section class="home">
+
+  <div>
+    <img id="so" src="images/img9.jpg" style="width:500px;height:687px;" class="shadow">
+
+  </div>
+  <div>
+    <h1  class="cake" > </h1>
+  </div>
+  <div>
+    <h1  class="cake" > </h1>
+  </div>
+
+  <div>
+    <h1  class="cake" > </h1>
+  </div>
+  <div>
+    <h1  class="cake" > </h1>
+  </div>
+
+
+
+</section>
+<section>
+
+  <div>
+    <h3 id="ab"class="au " >About us</h3>
+    <img class="imag" src="images/heart2.png" >
+    <div class="hl"></div>
+
+    <h3 class="text" >Welcome to our Cake Shop,We are happy to take your order <br>and provide to you
+      the most delicious cakes.</h3>
+
+
+
+  </div>
+
+
+
+
+</section>
+<h1  class="cake" > </h1>
+<div class="cont">
+  <img id="co"src="images/img6.jpg" style="width:430px;height:680px;" class="shadow3" >
+  <img id="do"src="images/img7.jpg" style="width:430px;height:680px;" class="shadow3" >
+
+  <div class="social" >
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <a id="f" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f "></i></a>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube "></i></a>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter "></i></a>
+    <h1  class="cake" > </h1>
+    <h1  class="cake" > </h1>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram "></i></a>
+  </div>
+
+</div>
+
+
+
+
+<section>
+
+
+</section>
+
+<script type="text/javascript">
+  let img1=document.getElementById("co");
+  let img2=document.getElementById("do");
+  let img3=document.getElementById("so");
+  let images1=["images/img6.jpg","images/img42 (1).jpg"];
+  let images2=["images/img7.jpg","images/img13.jpg"];
+  let images3=["images/img44 (1).jpg","images/img9.jpg"];
+  setInterval(function (){
+    let random= Math.floor(Math.random()*2);
+    let random2= Math.floor(Math.random()*2);
+    let random3= Math.floor(Math.random()*2);
+    img1.src=images1[random];
+    img2.src=images2[random2];
+    img3.src=images3[random3];
+
+  },800);
+</script>
+
+</body>
+</html>

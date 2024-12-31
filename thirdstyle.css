@@ -1,0 +1,418 @@
+body{
+   background-color: pink;
+
+
+
+}
+
+*{
+    magin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+header{
+    position:fixed;
+    background: pink;
+    display: flex;
+    top:0;
+    left:0;
+    width:100%;
+    height: 14%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+.p{
+    color: white;
+}
+
+
+.caketh{
+    font-size: 33px;
+    font-family:Brush Script MT;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+
+
+}
+.navi a{
+    position:relative;
+    font-size: 1.4em;
+
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    text-decoration: none;
+
+
+
+
+}
+
+.navi a::after{
+
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:100%;
+    height:3px;
+    background: white;
+    border-radius: 5px;
+    transform : scaleX(0);
+    transition:transform .5s;
+}
+
+.navi a:hover::after{
+    transform: scaleX(1);
+
+
+}
+
+select {
+
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    -webkit-appearance: listbox !important;
+    background: #ff299d;
+    background-image: none;
+    flex: 1;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: absolute;
+     flex: 1;
+    width: 7.5em;
+    height: 2.5em;
+
+
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.select::after {
+    content:'\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+
+.cover{
+    position: relative;
+
+}
+
+.mycp{
+position: absolute;
+    top:80%;
+    left:62%;
+    color:#ff1a66;
+    padding: 10px;
+   font-size: 17px;
+
+
+}
+
+.glow{
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #fff;
+
+
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 10px #e60073, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 30px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 30px #da368c, 0 0 30px #ff4da6, 0 0 30px #ff4da6, 0 0 30px #ff4da6;
+    }
+}
+
+
+
+.wrapper{
+
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+
+
+
+}
+.image{
+
+    margin: 0 15px;
+ position: relative;
+
+
+}
+
+
+.space{
+    padding-bottom: 60px;
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    display: flex;
+   opacity:0;
+    transition: 0.6s;
+    align-items:center;
+    justify-content: center;
+
+
+}
+.content2{
+
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    display: flex;
+    opacity:0;
+    transition: 0.6s;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+.content:hover{
+
+    opacity:1;
+}
+.content2:hover{
+
+    opacity:1;
+}
+
+.social{
+    display: flex;
+}
+.social a{
+    width:60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    margin: 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.social a .fab{
+    font-size: 20px;
+    line-height: 60px;
+    position: relative;
+    z-index: 10;
+    transition: color .5s;
+
+}
+.social a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:-90px;
+    left: 0;
+    background:linear-gradient(-45deg,pink,deeppink);
+    position: absolute;
+    transition: .5s;
+}
+
+.social a:hover::after{
+
+    top:0;
+
+}
+
+.social a:hover .fab{
+    color:white;
+
+}
+
+
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+
+    background:  #ff80b3;
+    padding: 30px;
+    border-radius: 30px;
+}
+.img-area {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background: pink;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-area .icon {
+    font-size: 100px;
+}
+.img-area h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.img-area p {
+    color: #999;
+}
+.img-area p span {
+    font-weight: 600;
+}
+.img-area img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 100;
+}
+.img-area::before {
+    content: attr(data-img);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 200;
+}
+.img-area.active:hover::before {
+    opacity: 1;
+}
+.select-image {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 15px;
+    background: palevioletred;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.select-image:hover {
+    background: pink;
+    color: palevioletred;
+}
+
+.cont2{
+    position: relative;
+    width:600px;
+    height: 500px;
+    background:   #ff80b3;
+    padding: 30px;
+    border-radius: 30px;
+    padding-bottom: 50px;
+
+}
+
+.btnadd{
+
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: #ff4d94;
+    color:pink;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+
+    border-radius: 10px;
+}
+
+.btnadd:hover{
+    background: pink;
+    color:#ff1a75 ;
+}
+
+.cont3{
+    position: relative;;
+
+    background:   #ff80b3;
+    padding: 30px;
+    border-radius: 30px;
+
+
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top:100%;
+    right: 10%;
+    width: 320px;
+
+
+
+}
+.sub-menu{
+
+    background: white;
+    padding: 20px;
+    margin: 10px;
+
+}
